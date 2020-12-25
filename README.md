@@ -18,8 +18,8 @@ BottomSheetDialogFragment
 4. Добавим простую БД для хранения списка данных
 
 
-          @Dao
-          interface EventDao {       
+        @Dao
+        interface EventDao {       
           @Query("SELECT * FROM event")
           fun getAll(): LiveData<List<Event>>
 
