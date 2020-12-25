@@ -17,24 +17,24 @@ BottomSheetDialogFragment
 
 4. Добавим простую БД для хранения списка данных
 
-     
-  «@Dao
-  interface EventDao {
-    @Query("SELECT * FROM event")
-    fun getAll(): LiveData<List<Event>>
 
-    @Query("SELECT * FROM event WHERE id = :id")
-    suspend fun get(id: Long): Event
+          @Dao
+          interface EventDao {       
+          @Query("SELECT * FROM event")
+          fun getAll(): LiveData<List<Event>>
 
-    @Insert
-    suspend fun insert(event: Event): Long
+          @Query("SELECT * FROM event WHERE id = :id")
+          suspend fun get(id: Long): Event
 
-    @Delete
-    suspend fun delete(event: Event)
+          @Insert
+          suspend fun insert(event: Event): Long
 
-    @Update
-    suspend fun update(event: Event)
-    }»
+          @Delete
+          suspend fun delete(event: Event)
+
+          @Update
+          suspend fun update(event: Event)
+          }
     
 
 5. Адаптер и Data class оставим практически без изменений
