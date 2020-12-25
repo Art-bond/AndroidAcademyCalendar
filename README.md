@@ -17,8 +17,8 @@ BottomSheetDialogFragment
 
 4. Добавим простую БД для хранения списка данных
 
-@Dao
-interface EventDao {
+    @Dao
+    interface EventDao {
     @Query("SELECT * FROM event")
     fun getAll(): LiveData<List<Event>>
 
@@ -32,7 +32,8 @@ interface EventDao {
     suspend fun delete(event: Event)
 
     @Update
-    suspend fun update(event: Event)}
+    suspend fun update(event: Event)
+    }
 
 5. Адаптер и Data class оставим практически без изменений
 
