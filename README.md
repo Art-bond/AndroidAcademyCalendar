@@ -3,11 +3,9 @@ The app shows the possibilities of working with the calendar and database (Room)
 
 Приложение отображающее список мероприятий
 
-https://github.com/Art-bond/AcademyAndroid/tree/AcademyTwoPlus
-
 Вместо двух Activity, создадим два Fragmenta
-2. Один из фрагментов для удобства будет :
 
+2. Один из фрагментов для удобства будет :
 BottomSheetDialogFragment
 чтобы все было видно на одном экране
 
